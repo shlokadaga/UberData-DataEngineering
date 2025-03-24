@@ -22,7 +22,8 @@ The dataset used in the project has been uploaded in the repository. But, to get
   - **Looker API** (if needed later for Looker integration)
 
 ### 3. Create a Cloud Storage Bucket
-- Go to **Cloud Storage > Buckets** and click **Create**.
+- Go to **Cloud Storage**
+- CLick on **Buckets** and click **Create**.
 - Configure the following:
   - **Bucket name:** Choose a globally unique name.
   - **Location:** Select multi-region or region based on your requirement.
@@ -33,7 +34,7 @@ The dataset used in the project has been uploaded in the repository. But, to get
 - Create the bucket once the settings are finalized.
 
 ### 4. Upload Data to Cloud Storage
-- Navigate to **Cloud Storage > Browser** and select your bucket.
+- Navigate to **Cloud Storage** and select your bucket.
 - Click **Upload Files** or **Upload Folder** to upload the dataset from your local system.
 - Verify that the data is successfully uploaded.
 
