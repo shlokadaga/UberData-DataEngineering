@@ -7,20 +7,36 @@ The primary goal of this project is to build a complete data engineering pipelin
 ## Dataset
 The dataset used in the project has been uploaded in the repository. But, to get more information about the source of the data, you can visit this website: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
-## GCP
-1. Make sure you have enabled billing for your Google Cloud project to access various services.
-<br>2. You can link a billing account to your project under the Billing section in the GCP Console.
-<br>3. Navigate to the API & Services section in the GCP Console.
-<br>4. Search for Cloud Storage and enable the Google Cloud Storage API if it’s not already enabled.
-<br>5. Go to the Cloud Storage section in the GCP Console.
-<br>6. Click on Create Bucket.
-<br>7. Select a location (multi-regional or regional).
-<br>8. Set the storage class (Standard, Nearline, Coldline, or Archive).
-<br>9. Choose Access control settings for the bucket (e.g., public or private).
-<br>10. Go to Cloud Storage > Browser and select your bucket.
-<br>11. Click on Upload Files to select and upload files from your local system. Alternatively, you can upload a whole folder by choosing Upload Folder.
+---
 
-<br>Once, the data has been uploaded to GCP, then 
+## Google Cloud Platform (GCP) Setup
+
+### 1. Enable Billing
+- Ensure your Google Cloud project has billing enabled to access required GCP services.
+- Link your billing account under the **Billing** section of the GCP Console.
+
+### 2. Enable APIs
+- Navigate to **APIs & Services** in the GCP Console.
+- Enable the following APIs if not already enabled:
+  - **Google Cloud Storage API**
+  - **BigQuery API**
+  - **Looker API** (if needed later for Looker integration)
+
+### 3. Create a Cloud Storage Bucket
+- Go to **Cloud Storage > Buckets** and click **Create**.
+- Configure the following:
+  - **Bucket name:** Choose a globally unique name.
+  - **Location:** Select multi-region or region based on your requirement.
+  - **Storage Class:** Choose based on data usage:
+    - **Standard:** Frequently accessed data
+    - **Nearline/Coldline:** For infrequently accessed data
+  - **Access Control:** Decide between Uniform or Fine-grained access.
+- Create the bucket once the settings are finalized.
+
+### 4. Upload Data to Cloud Storage
+- Navigate to **Cloud Storage > Browser** and select your bucket.
+- Click **Upload Files** or **Upload Folder** to upload the dataset from your local system.
+- Verify that the data is successfully uploaded.
 
 ## Mage.ai Pipeline - Extract, Transform, Load (ETL)
 ### 1. Connect Mage.ai to GCP
