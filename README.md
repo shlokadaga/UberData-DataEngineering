@@ -1,7 +1,7 @@
 # UberData-DataEngineering
 ## Introduction
 The primary goal of this project is to build a complete data engineering pipeline using Google Cloud Platform (GCP) and Mage.ai. The pipeline will extract Uber trip data from Google Cloud Storage (GCS), perform data cleaning and transformation operations within Mage.ai, and load the processed data back into GCS. Once the data is clean and ready, we will leverage BigQuery for analytical queries and data exploration. Finally, the project will conclude with creating visualizations using Looker to derive insights from the data.
-This end-to-end project aims to showcase a real-world data engineering workflow, demonstrating data ingestion, transformation, storage, querying, and visualization using modern cloud-based tools.
+<br> This end-to-end project aims to showcase a real-world data engineering workflow, demonstrating data ingestion, transformation, storage, querying, and visualization using modern cloud-based tools.
 
 ## Dataset
 The dataset used in the project has been uploaded in the repository. But, to get more information about the source of the data, you can visit this website: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
